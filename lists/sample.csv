@@ -1,0 +1,6 @@
+filename|word|supervised|reps
+BEACH-100.WAV|beach|supervised|2
+BEES90.WAV|peas|supervised|2
+BEAK60.WAV|peak|unsupervised|2
+BEACH10.WAV|peach|supervised|2
+BEES-40.WAV|bees|unsupervised|2

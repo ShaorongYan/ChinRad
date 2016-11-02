@@ -1,0 +1,46 @@
+<div id="endForm" class="survey">
+    <div class="question_section" id="javascript" style="display:visible">
+        <p>Describe your level of experience with each of the following. This will help give us present the class at an appropriate level.</p>
+        <p name="R">R, python, matlab, or similar</p>
+        <textArea id="R" name="R" onkeypress="return isValidKey(event)"></textArea>
+        <p name="javascript">Javascript</p>
+        <textArea id="javascript" name="javascript" onkeypress="return isValidKey(event)"></textArea>
+        <p name="html-css">HTML/CSS</p>
+        <textArea id="html-css" name="html-css" onkeypress="return isValidKey(event)"></textArea>
+        <p name="belief">Bayesian Belief Updating Models</p>
+        <textArea id="belief" name="belief" onkeypress="return isValidKey(event)"></textArea>
+        <p name="speech">Speech perception literature</p>
+        <textArea id="speech" name="speech" onkeypress="return isValidKey(event)"></textArea>
+        <input type="button" id="SurveyContinue" name="Continue" value="Continue" class="moveOn"></input>
+    </div>
+    
+    <div class="question_section" id="run_mturk" style="display:none">
+        <p>Have you ever run an experiment on Amazon Mechanical Turk (prior to this one)?</p>
+        <input type="radio" name="run_mturk" value="yes">Yes.</input><br/>
+        <input type="radio" name="run_mturk" value="no">No.</input><br/>
+        
+        <input type="button" id="SurveyContinue" name="Continue" value="Continue" class="moveOn"></input>
+    </div>
+    
+    <div class="question_section" id="participated_mturk" style="display:none">
+        <p>Have you ever participated in an experiment on Amazon Mechanical Turk (prior to this one)?</p>
+        <input type="radio" id="participated_mturk" value="yes">Yes.</input><br/>
+        <input type="radio" id="participated_mturk" value="no">No.</input><br/>
+        
+        <input type="button" id="SurveyContinue" name="Continue" value="Continue" class="moveOn"></input>
+    </div>
+
+    <div class="question_section" id="team" style="display:none">
+        <p>Enter the names of the members in your group</p>
+        <textArea id="team" name="team" onkeypress="return isValidKey(event)"></textArea>
+        <input type="button" id="SurveyContinue" name="Continue" value="Continue" class="moveOn"></input>
+    </div>
+    
+    <div class="question_section" id="comments" style="display:none">
+        <p name="comments">(Optional) Enter any other comments you might have, e.g. what you expect from this module.</p>
+        <textArea id="comments" name="comments" onkeypress="return isValidKey(event)"></textArea>
+        <input type="button" id="SurveyContinue" name="Continue" value="Continue" class="moveOn"></input>
+    </div>
+</div>
+
+

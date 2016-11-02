@@ -1,0 +1,133 @@
+---
+title: Speech Experiment (10 minutes)
+description: A simple speech perception experiment (pictures and sounds) and survey, approximately 10 minutes
+keywords: psychology,experiment,speech,perception,linguistics
+reward: 1.00
+assignments: 5
+######################################
+## HIT Timing Properties
+######################################
+
+# this Assignment Duration value is 60 * 60 = 1 hour
+assignmentduration: 3600
+
+# this HIT Lifetime value is 60*60*24*5 = 5 days
+hitlifetime: 172800
+
+# this Auto Approval period is 60*60*24*15 = 15 days
+autoapprovaldelay: 1296000
+
+#There are many different qualifications that can be used. Here are two samples
+qualifications:
+  builtin:
+    # this is a built-in qualification -- user must have > 95% approval rate
+    - qualification: PercentAssignmentsApprovedRequirement
+      comparator: GreaterThan
+      value: 95
+      private: true
+    # this is a built-in qualification -- user must be in the United States
+    - qualification: LocaleRequirement
+      comparator: EqualTo
+      locale: US
+      private: false
+
+question:
+  url: https://www.hlp.rochester.edu/mturk/lliu/nrtmodule/team4.html?condition={condition}&list={list}
+  height: 700
+  input:
+    - condition: sup
+      list: 1a
+    - condition: sup
+      list: 1b
+    - condition: sup
+      list: 2a
+    - condition: sup
+      list: 2b
+    - condition: sup
+      list: 3a
+    - condition: sup
+      list: 3b
+    - condition: unsup
+      list: 1a
+    - condition: unsup
+      list: 1b
+    - condition: unsup
+      list: 2a
+    - condition: unsup
+      list: 2b
+    - condition: unsup
+      list: 3a
+    - condition: unsup
+      list: 3b
+    - condition: sup
+      list: 1a
+    - condition: sup
+      list: 1b
+    - condition: sup
+      list: 2a
+    - condition: sup
+      list: 2b
+    - condition: sup
+      list: 3a
+    - condition: sup
+      list: 3b
+    - condition: unsup
+      list: 1a
+    - condition: unsup
+      list: 1b
+    - condition: unsup
+      list: 2a
+    - condition: unsup
+      list: 2b
+    - condition: unsup
+      list: 3a
+    - condition: unsup
+      list: 3b
+    - condition: sup
+      list: 1a
+    - condition: sup
+      list: 1b
+    - condition: sup
+      list: 2a
+    - condition: sup
+      list: 2b
+    - condition: sup
+      list: 3a
+    - condition: sup
+      list: 3b
+    - condition: unsup
+      list: 1a
+    - condition: unsup
+      list: 1b
+    - condition: unsup
+      list: 2a
+    - condition: unsup
+      list: 2b
+    - condition: unsup
+      list: 3a
+    - condition: unsup
+      list: 3b
+    - condition: sup
+      list: 1a
+    - condition: sup
+      list: 1b
+    - condition: sup
+      list: 2a
+    - condition: sup
+      list: 2b
+    - condition: sup
+      list: 3a
+    - condition: sup
+      list: 3b
+    - condition: unsup
+      list: 1a
+    - condition: unsup
+      list: 1b
+    - condition: unsup
+      list: 2a
+    - condition: unsup
+      list: 2b
+    - condition: unsup
+      list: 3a
+    - condition: unsup
+      list: 3b
