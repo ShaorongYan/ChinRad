@@ -26,43 +26,22 @@ $(document).ready(function() {
      * Customize this depending on your needs 
      */
     var experimentList;
+    
     if (e.urlparams['condition'] == 'mock_experiment') {
         experimentList = 'lists/sample.csv';
     }
 
-    /* Image pairs to show for a given word, depending on the condition and whether it is supervised or not*/
-    // stimuli words maped to the corresponding images
-    var stimImages = {
-        beach: 'stimuli/stimuli_images/beach.png',
-        peach: 'stimuli/stimuli_images/peach.png',
-        bees: 'stimuli/stimuli_images/bees.png',
-        peas: 'stimuli/stimuli_images/peas.png',
-        beak: 'stimuli/stimuli_images/beak.png',
-        peak: 'stimuli/stimuli_images/peak.png'
-    };
-
-    //Maps training condition (supervised or not) and word to the two images that should be presented
-    var imageMapping = {'unsupervised': {'beach': ['beach', 'peach'],   // all minimal pairs
-                                         'peach': ['beach', 'peach'],   
-                                          'bees': ['bees', 'peas'],
-                                          'peas': ['bees', 'peas'],
-                                          'beak': ['beak', 'peak'],
-                                          'peak': ['beak', 'peak']},
-                          'supervised': {'beach': ['beach', 'peas'],    // all non-minimal pairs
-                                         'peach': ['beak', 'peach'],
-                                          'bees': ['bees', 'peak'],
-                                          'peas': ['beach', 'peas'],
-                                          'beak': ['beak', 'peach'],
-                                          'peak': ['bees', 'peak']}
-                         };
-
     /* Create and add a collapsing instructions block to our experiment */
     var instructions = new InstructionsSubsectionsBlock({
             logoImg: 'logo.png',
-            title: 'DSC 530, Module 2, Assignment 1',
-            mainInstructions: ['This fake Human Intelligence Task (HIT) will help familiarize you with the kind of experiment you will run on Amazon Mechanical Turk.'+
-                               ' This is an example of an interactive landing page that can be used to inform participants of the requirements for the HIT.'+
-                               ' You can click the names below to expand or close each section.'],
+            title: 'Norming Study',
+            mainInstructions: ['Thanks for your interest in our study!  This HIT is a psychology experiment about how people comprehend sentences. In this experiment, you will see fragments of sentences, and your task is to choose which you think is the next word of the sentence. Please don’t try to be overly creative and just choose with your immediate impression.
+ <br><br>'+
+                               '感谢您对我们实验的兴趣!  这个人类智能任务(Human Intelligentce Task) 是一个关于语言理解的实验。在这个实验中，您将读到一些不完整的句子，.<br><br>'
+                                   'Please read through each of the following items that will inform you about the study and its requirements. You can click the names below to expand or close each section.',+
+                               'Please read through each of the following items that will inform you about the study and its requirements. You can click the names below to expand or close each section.'
+                                   '<span style="font-weight:bold;">Do not take this experiment more than once! </span>',
+                              '<span style="font-weight:bold;">Do not take this experiment more than once! </span>'],
             subsections: [
                 {
                     title: 'Eligibility requirements',
